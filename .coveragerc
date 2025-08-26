@@ -1,0 +1,16 @@
+[run]
+branch = True
+source = yourpkg
+concurrency = multiprocessing
+parallel = True
+sigterm = True
+
+[report]
+fail_under = 85
+show_missing = True
+precision = 2
+
+[paths]
+source =
+    yourpkg
+    */site-packages/yourpkg

@@ -1,0 +1,7 @@
+[tool.liccheck]
+authorized_licenses = ["mit", "bsd", "apache 2.0", "isc license"]
+unauthorized_licenses = ["gpl v3"]
+as_regex = true  # 예: '\bgpl' 같은 정규식 허용
+
+[tool.pytest.ini_options]
+addopts = "-ra -q --cov=yourpkg --cov-branch --cov-report=term-missing --cov-report=xml --cov-fail-under=85"
